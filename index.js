@@ -130,12 +130,12 @@ timer = () => {
       init();
     }
     // １０問目が終わったらresult画面へ
-    if (quizCount === 10) {
+    if (quizCount === 5) {
       $('.quizMain').hide();
       $('.result').fadeIn();
       let correctCount = result.filter(x => x === 'OK');
       console.log(correctCount.length);
-      $('.result span').text(`${correctCount.length}/10`)
+      $('.result span').text(`${correctCount.length}/5`)
       crearTimer();
       $('.timer').hide();
     }
@@ -227,12 +227,12 @@ $('.btn button').on('click', (e) => {
   quizCount++;
   init();
   // console.log(quizCount);
-  if (quizCount === 10) {
+  if (quizCount === 5) {
     $('.quizMain').hide();
     $('.result').fadeIn();
     let correctCount = result.filter(x => x === 'OK');
     // console.log(correctCount.length);
-    $('.result span').text(`${correctCount.length}/10`)
+    $('.result span').text(`${correctCount.length}/5`)
     crearTimer();
     $('.timer').hide();
   }
