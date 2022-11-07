@@ -183,3 +183,9 @@ body {
   text-align: center;
   width: 70px;
 }
+
+/* デフォルトぼたん */
+.default label {
+  color: red;
+  text-shadow: 0 1px gray;
+}

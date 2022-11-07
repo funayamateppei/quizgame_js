@@ -64,7 +64,7 @@
 
   <div class="quizlist">
     <h2>クイズ一覧</h2>
-    <h3>問題と選択肢３つを入力すれば問題を追加できます</h3>
+    <h3>問題、選択肢３つ、正解番号を入力すれば問題を追加できます</h3>
     <div class="form">
       <label for="quiz">問題</label>
       <input id="quiz" type="text">
@@ -73,6 +73,7 @@
       ２<input id="answer02" type="text">
       ３<input id="answer03" type="text">
       正解番号<select name="number" id="correct">
+        <option hidden></option>
         <option value="0">1</option>
         <option value="1">2</option>
         <option value="2">3</option>

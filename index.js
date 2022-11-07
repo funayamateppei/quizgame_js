@@ -130,7 +130,7 @@ timer = () => {
       init();
     }
     // １０問目が終わったらresult画面へ
-    if (quizCount === 3) {
+    if (quizCount === 10) {
       $('.quizMain').hide();
       $('.result').fadeIn();
       let correctCount = result.filter(x => x === 'OK');
@@ -227,7 +227,7 @@ $('.btn button').on('click', (e) => {
   quizCount++;
   init();
   // console.log(quizCount);
-  if (quizCount === 3) {
+  if (quizCount === 10) {
     $('.quizMain').hide();
     $('.result').fadeIn();
     let correctCount = result.filter(x => x === 'OK');
