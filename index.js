@@ -162,6 +162,7 @@ const crearTimer = () => {
 let quizCount = 0;
 let result = [];
 let correctNumber = 0;
+//ランダム関数の値をグローバルに使いたいから上書きして持っておく
 
 const NextQuiz = () => {
   const min = 0;
@@ -269,7 +270,7 @@ $('.pageBtn').on('click', () => {
 const showData = (i) => {
   crearTable();
   quiz.map((x, i) => {
-    let html = `<h4>${i + 1}. 質問 : ${quiz[i].question}</h4>`;
+    let html = `<h4>${i + 1}. 問題 : ${quiz[i].question}</h4>`;
     $('.display').append(`<div class="box answers${i}"></div>`)
     html += `1<p>${quiz[i].answer[0]}</p>`;
     html += `2<p>${quiz[i].answer[1]}</p>`;

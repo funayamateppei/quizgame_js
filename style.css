@@ -47,7 +47,7 @@ body {
 
 /* 選択肢３つ */
 .answer {
-  width: 70%;
+  width: 60%;
   margin: 20px auto;
   display: flex;
   flex-direction: column;
