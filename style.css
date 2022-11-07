@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./img/vintage-paper-7-1560x2355.jpg);
+}
+
+/* 題名 */
+.top {
+  width: 80%;
+  margin: 80px auto;
+}
+.top h1 {
+  font-size: 60px;;
+  text-align: center;
+}
+
+/* 初期画面のスタートボタン */
+.start {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.start button {
+  margin: 50px;
+  width: 200px;
+  height: 100px;
+}
+
+/* 問題、選択肢、ボタンのブロック */
+.quizMain {
+  display: none;
+}
+
+/* 問題 */
+.question {
+  width: 80%;
+  margin: 30px auto;
+}
+.question h2 {
+  text-align: center;
+}
+
+/* 選択肢３つ */
+.answer {
+  width: 70%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.answer p {
+  font-size: 20px;
+}
+
+/* ボタン３つ */
+.btn {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn button {
+  margin: 5px;
+  width: 200px;
+  border-radius: 3px;
+}
+
+/* 正誤のimg画像 */
+.jadge {
+  display: flex;
+  justify-content: center;
+}
+
+.jadge img {
+  width: 250px;
+  height: 250px;
+}
+
+#circle {
+  display: none;
+}
+
+#cross {
+  display: none;
+}
+
+/* result表示 */
+.result {
+  text-align: center;
+  display: none;
+}
+
+.result button {
+  font-size: 24px;
+  margin: 50px;
+  width: 200px;
+  height: 100px;
+}
+
+
+/* ミュート機能 */
+.mute {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+.mute button {
+  font-size: 30px;
+  border: none;
+  background-color: rgba(0,0,0, 0);
+}
+
+.fa-volume-xmark {
+  display: none;
+}
+
+/* カウントダウンタイマー */
+.timer {
+  text-align: center;
+  margin: 30px;
+  font-size: 24px;
+}
+
+/* クイズ一覧ボタン */
+.page {
+  display: flex;
+  justify-content: center;
+}
+
+.pageBack {
+  margin: 50px 0;
+  display: none;
+}
+
+/* クイズ一覧 */
+.quizlist {
+  width: 80%;
+  margin: 50px auto;
+  display: none;
+}
+.quizlist h2, .quizlist h3 {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid gray;
+}
+
+.form label, .form input, .form select {
+  margin: 5px;
+}
+.form select {
+  width: 50px;
+}
+.form button {
+  margin: 5px 0 15px 0;
+}
+
+.box {
+  margin-top: 5px;
+  border-top: 1px solid gray;
+  padding: 10px;
+}
+
+
+/* 削除機能 */
+.remove {
+  border-top: 1px solid gray;
+  margin-top: 10px;
+}
+.remove input {
+  text-align: center;
+  width: 70px;
+}
