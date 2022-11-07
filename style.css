@@ -175,10 +175,11 @@ body {
 
 /* 削除機能 */
 .remove {
+  padding: 10px;
   border-top: 1px solid gray;
-  margin-top: 10px;
 }
 .remove input {
+  margin-top: 15px;
   text-align: center;
   width: 70px;
 }

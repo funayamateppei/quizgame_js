@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,13 @@
   <link rel="shortcut icon" href="crab.jpeg" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
   <title>Quiz Game</title>
 </head>
+
 <body>
   <audio class="audio1" src="./audio/answer.mp3"></audio>
   <audio class="audio2" src="./audio/notAnswer.mp3"></audio>
@@ -21,7 +23,7 @@
     <div class="top">
       <h1>IPPONグランプリ３択クイズ</h1>
     </div>
-      <p class="timer">00,00</p>
+    <p class="timer">00,00</p>
     <div class="start">
       <h2>IPPONがとれたのはどれでしょう</h2>
       <button id="start">START</button>
@@ -31,9 +33,9 @@
         <h2>question</h2>
       </div>
       <div class="answer">
-          <p >1.　<span id="answer1"></span></p>
-          <p >2.　<span id="answer2"></span></p>
-          <p >3.　<span id="answer3"></span></p>
+        <p>1.　<span id="answer1"></span></p>
+        <p>2.　<span id="answer2"></span></p>
+        <p>3.　<span id="answer3"></span></p>
       </div>
       <div class="btn">
         <button id="btn1" value="0">1</button>
@@ -55,15 +57,15 @@
     </div>
   </div>
 
-<div class="page">
-  <button class="pageBtn">クイズ一覧へ</button>
-  <button class="pageBack">戻る</button>
-</div>
+  <div class="page">
+    <button class="pageBtn">クイズ一覧へ</button>
+    <button class="pageBack">戻る</button>
+  </div>
 
-<div class="quizlist">
-  <h2>クイズ一覧</h2>
-  <h3>問題と選択肢３つを入力すれば問題を追加できます</h3>
-  <div class="form">
+  <div class="quizlist">
+    <h2>クイズ一覧</h2>
+    <h3>問題と選択肢３つを入力すれば問題を追加できます</h3>
+    <div class="form">
       <label for="quiz">問題</label>
       <input id="quiz" type="text">
       <label>選択肢</label>
@@ -77,19 +79,24 @@
       </select>
       <button id="submit">登録</button>
       <div class="remove">
-        <label for="remove">削除番号</label>
+        <label for="remove">問題番号</label>
         <input id="remove" type="number">
-        <button>削除</button>
+        <button id="removeBtn">削除</button>
       </div>
-  </div>
-  <div class="display">
-    
-    <!-- クイズの配列を全てここに作成して表示する -->
-  </div>
+      <div class="default">
+        <label for="default">追加した問題も消えます</label>
+        <button id="default">デフォルトに戻す</button>
+      </div>
+    </div>
+    <div class="display">
 
-</div>
+      <!-- クイズの配列を全てここに作成して表示する -->
+    </div>
+
+  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="./index.js"></script>
 </body>
+
 </html>
